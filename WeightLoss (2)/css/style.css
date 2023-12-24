@@ -1,0 +1,891 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+h1 {
+    font-size: 4.0em;
+    margin: 10px 0 20px 10px;
+    color: #6587ac;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.canvas {
+    width: 960px;
+    height: auto;
+    margin-left: 450px;
+    margin-right: 450px;
+    background: #fff;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+/* ================================= start splash screen CSS ============================= */
+.splash-screen {
+    background: url("../images/splash-screen.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+    top: 0px;
+}
+
+.main-container {
+    width: 1920px;
+    height: 1080px;
+}
+
+/* ================================= end splash screen CSS ============================= */
+
+
+/* ================================= start home screen CSS ============================= */
+
+.home-container {
+    width: 1920px;
+    height: 1080px;
+    color: #fff;
+    position: relative;
+}
+
+.row-container-inner {
+    display: inline-flex !important;
+    padding-top: 54px;
+}
+
+.menu-list {
+    /* padding: 16px; */
+    padding: 11px;
+    display: inline-flex;
+}
+
+.row-list {
+    clear: both;
+    display: table;
+    margin-bottom: 27px;
+    /* margin-left: 10px; */
+}
+
+.video_listing {
+    width: 1920px;
+    overflow: hidden;
+}
+
+.category-list {
+    left: 0;
+    width: 1000000000px;
+    text-align: left;
+    padding-top: 0;
+    margin-left: 20px;
+    float: left;
+}
+
+.menu-categry {
+    font-size: 42px;
+    font-family: 'Poppins-Bold';
+    font-weight: 800;
+}
+
+.data-category-list {
+    display: flex;
+    font-size: 30px;
+}
+
+.images-container {
+    width: 1920px;
+    height: 1080px;
+    position: fixed;
+}
+
+.image-banner-container {
+    width: 1920px;
+    height: 1080px;
+    position: fixed;
+}
+
+.outer-container {
+    clear: both;
+    position: absolute;
+    top: 280px;
+    height: 390px;
+    overflow: hidden;
+    width: 1920px;
+}
+
+.images-container:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, #000, #000);
+    left: 0;
+    z-index: 999999999;
+    bottom: 0;
+}
+
+.image-thumnails {
+    width: 100%;
+    /* padding: 60px; */
+}
+
+.bottomContainer {
+    position: absolute;
+    z-index: 999999999;
+    top: 38%;
+    left: 0;
+
+}
+
+.img-thumnails {
+    width: 226px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* .right-list-container {
+    padding-left: 23px;
+} */
+
+li.menu-item {
+    height: 71px;
+    text-align: center;
+    display: inline-grid;
+    font-size: 24px;
+    font-family: 'Roboto-Bold';
+    padding-top: 10px;
+    padding-left: 6px;
+}
+
+li.menu-item:focus {
+    color: #F3A43F;
+}
+
+.item-cat {
+    padding: 5px;
+    border: 2px solid transparent;
+}
+
+.item-cat:focus {
+    padding: 5px;
+    color: #F3A43F;
+}
+
+.my-video:focus {
+    color: #F3A43F;
+    padding: 14px;
+    font-family: 'Roboto-Bold';
+}
+
+.my-video {
+    padding: 14px;
+    font-family: 'Roboto-Bold';
+}
+
+li.cat-item {
+    float: left;
+    position: relative;
+    border: 4px solid transparent;
+}
+
+li.cat-item:focus {
+    border: 4px solid #F3A43F;
+    width: 400px;
+    height: 231px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.outer-heading {
+    font-size: 34px;
+    padding-left: 31px;
+}
+
+.cat-img-thumnails {
+    width: 400px;
+    height: 231px;
+
+}
+
+.watch-heading {
+    color: #fff;
+    z-index: 999;
+    left: 38px;
+    position: absolute;
+    top: 314px;
+    font-size: 52px;
+    font-family: 'Poppins-Bold';
+}
+
+.menu-cat {
+    background: #777A84;
+    height: 22px;
+    white-space: nowrap;
+    padding: 15px 15px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contact-us-container {
+    z-index: 999999999;
+    position: absolute;
+    top: 0;
+    background: #424242;
+    ;
+    margin-top: 323px;
+    width: 1800px;
+    height: 559px;
+    margin-left: 61px;
+    color: #fff;
+    font-size: 25px;
+    padding-top: 53px;
+    font-family: 'Poppins-Medium';
+}
+
+.paragraph {
+    font-size: 25px;
+    padding-left: 60px;
+    font-family: 'Poppins-Medium';
+}
+
+.paragraph-list {
+    font-size: 25px;
+    padding-left: 60px;
+    font-family: 'Poppins-Medium';
+}
+
+.subs-headline {
+    text-align: center;
+    font-size: 50px;
+    background-color: #8a84842b;
+    padding: 30px;
+}
+
+.subscription_modal {
+    position: absolute;
+    top: 0;
+}
+
+.ok_btn {
+    text-align: center;
+}
+
+.ok-button {
+    width: 336px;
+    height: 90px;
+    border-radius: 50px;
+    border: 0px solid transparent;
+    font-size: 35px;
+    font-family: 'Roboto-Bold';
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff9b39, #fe48a2);
+    margin-top: 23px;
+    text-align: center;
+}
+
+.ok-button:focus {
+    border: 4px solid #F3A43F;
+}
+
+.food-tracker-container {
+    z-index: 999999999;
+    position: absolute;
+    top: 0;
+    background: #424242;
+    margin-top: 321px;
+    width: 1053px;
+    height: 406px;
+    margin-left: 449px;
+    color: #fff;
+    font-size: 23px;
+    /* padding-top: 61px; */
+    font-family: 'Roboto-Bold';
+}
+
+.food-headline {
+    text-align: center;
+    font-size: 50px;
+    background-color: #a99c9c2b;
+    padding: 30px;
+}
+
+.food-subscription-modal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.food-paragraph {
+    font-size: 35px;
+    padding: 20px;
+    text-align: center;
+}
+
+.food-okbtn {
+    text-align: center;
+    /* padding: 20px; */
+}
+
+.food-okbutton:focus {
+    border: 4px solid #F3A43F;
+}
+
+.food-okbutton {
+    width: 336px;
+    height: 90px;
+    border-radius: 50px;
+    border: 0px solid transparent;
+    font-size: 26px;
+    font-family: 'Roboto-Bold';
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff9b39, #fe48a2);
+    margin-top: 62px;
+    text-align: center;
+}
+
+.title-heading {
+    height: 56px;
+    background-color: #777A84;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 14px;
+    margin-top: -7px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: 700;
+}
+
+/* ================================= end home screen CSS ============================= */
+
+
+/* ================================= start logout screen CSS ============================= */
+.logout-container {
+    z-index: 999999999;
+    position: absolute;
+    top: 0;
+    background: #424242;
+    margin-top: 323px;
+    width: 1053px;
+    height: 361px;
+    margin-left: 449px;
+    color: #fff;
+    font-size: 23px;
+    padding-top: 61px;
+    font-family: 'Roboto-Bold';
+    text-align: center;
+}
+
+.logout-okbutton {
+    width: 258px;
+    height: 88px;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+p.logout-paragraph {
+    font-size: 48px;
+    font-weight: 800;
+    padding: 20px;
+}
+
+.logout-okbutton:focus {
+    color: #F3A43F;
+}
+
+/* details container */
+.details-container {
+    display: block;
+    width: 800px;
+    position: absolute;
+    bottom: 471px;
+    left: 37px;
+}
+
+.top-item-info {
+    padding-top: 72px;
+    font-size: 29px;
+    font-family: 'Poppins-Medium';
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 64px;
+}
+
+.special-item-info{
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: 'Roboto-Bold';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 64px;
+}
+.special-item-title{
+    font-size: 48px;
+    font-weight: 800;
+}
+.top-item-desc {
+    padding-top: 145px;
+    font-size: 29px;
+    font-family: 'Poppins-Medium';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 131px;
+}
+
+.top-item-title {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Poppins-Bold';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /* height: 115px; */
+    margin-bottom: 10px;
+}
+
+/* my video lirabery */
+.video-details-container {
+    width: 1920px;
+    height: 1080px;
+    color: #fff;
+    padding-top: 148px;
+}
+
+.my-video-heading {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Poppins-Bold';
+    text-align: center;
+    padding-top: 52px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.my-video-details-container {
+    height: 961px;
+    overflow: hidden;
+    /* top: 120px; */
+    position: relative;
+}
+
+/* program details css */
+.program-episodes-container {
+    padding-top: 49px;
+    top: 0;
+    position: absolute;
+}
+
+/* main details page css  */
+.bg-image {
+    width: 1920px;
+    height: 1080px;
+    position: fixed;
+}
+
+.bg-image:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 999999999;
+    bottom: 0;
+    background-image: linear-gradient(to right, #000, #000);
+    top: 555px;
+}
+
+.background-thumnails {
+    width: 100%;
+}
+
+.thumnails {
+    top: 412px;
+    z-index: 99999;
+    position: absolute;
+    height: 227px;
+    width: 400px;
+    padding-left: 148px;
+}
+
+.row-container {
+    position: absolute;
+    color: #fff;
+    padding-left: 669px;
+    bottom: 56px;
+}
+
+.details-item-desc {
+    font-size: 33px;
+    padding: 10px;
+    font-family: 'Poppins-Medium';
+}
+.subtitle-item-title{
+    font-size: 38px;
+    padding: 10px;
+    font-family: 'Poppins-Medium';
+}
+.details-item-title {
+    font-size: 41px;
+    font-weight: 700;
+    padding: 10px;
+    font-family: 'Poppins-Bold';
+}
+
+.details-item-info {
+    font-size: 33px;
+    padding: 10px;
+    font-family: 'Poppins-Medium';
+}
+
+.play-button {
+    position: absolute;
+    bottom: 467px;
+    color: #fff;
+    font-size: 43px;
+    background-color: #ffffff30;
+    text-align: center;
+    width: 186px;
+    height: 71px;
+    font-weight: 700;
+    padding-top: 19px;
+    margin-left: 669px;
+}
+
+.play-button:focus {
+    color: #F3A43F;
+}
+
+.border-background {
+    background-color: #353938;
+    position: absolute;
+    width: 1920px;
+    top: 485px;
+    padding-top: 157px;
+}
+
+.screen-Background {
+    width: 1920px;
+    height: 1080px;
+}
+.video-heading{
+    text-align: center;
+    color:#fff;
+}
+.screen-Background:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, #000);
+    left: 0;
+    z-index: 999999999;
+    bottom: 0;
+}
+
+.top-banner-background {
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+}
+
+.top-banner-background .screen-Background {
+    width: 1300px;
+    height: 700px;
+    position: absolute;
+    right: 0;
+}
+
+.top-banner-background:before {
+    content: "";
+    position: absolute;
+    height: 57%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, #000, #000, #000, #000);
+    left: 0;
+    z-index: 999999999;
+    bottom: 0;
+}
+
+.top-banner-background:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 43%;
+    background-image: linear-gradient(to left, transparent, #000, #000, #000, #000);
+    left: 0;
+    z-index: 999999999;
+    top: 0;
+
+}
+
+.top-second-banner-background {
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+}
+
+.top-second-banner-background .second-screen-Background {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    right: 0;
+}
+
+.top-second-banner-background:before {
+    content: "";
+    position: absolute;
+    height: 57%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, #0000007a, #0000007a, #0000007a, #0000007a);
+    left: 0;
+    z-index: 999999999;
+    bottom: 0;
+}
+
+.top-second-banner-background:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 72%;
+    background-image: linear-gradient(to left, #0000, #000, #000);
+    left: 0;
+    z-index: 999999999;
+    top: 0;
+}
+
+.full-detail-page-container {
+    height: 1080px;
+    color: #fff;
+    width: 800px;
+    position: absolute;
+    left: 37px;
+    top: -373px;
+}
+
+.watch-button {
+    width: 336px;
+    height: 90px;
+    border-radius: 50px;
+    border: 0px solid transparent;
+    font-size: 26px;
+    font-family: 'Roboto-Bold';
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff9b39, #fe48a2);
+    margin-top: 178px;
+    text-align: center;
+
+}
+
+.watch {
+    padding-top: 27px;
+    position: absolute;
+    padding-left: -29px;
+    margin-left: -49px;
+}
+
+.watch-button:focus {
+    border: 4px solid #F3A43F;
+}
+
+/* watch modal popup */
+
+.watch-pop-first-container {
+    z-index: 999999999;
+    position: absolute;
+    top: 0;
+    background: #4e4c4c;
+    margin-top: 323px;
+    width: 895px;
+    height: 290px;
+    margin-left: 558px;
+    color: #fff;
+    font-size: 23px;
+    padding-top: 61px;
+    font-family: 'Poppins-regular';
+}
+
+.pop-first-headline {
+    text-align: center;
+    font-size: 50px;
+    background-color: #8a84842b;
+    padding: 10px;
+    font-family: 'Poppins-Bold';
+}
+
+.pop-first-paragraph {
+    font-size: 26px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pop-first-okbtn {
+    text-align: center;
+    /* padding: 20px; */
+}
+
+.pop-first-okbutton {
+    width: 336px;
+    height: 90px;
+    border-radius: 50px;
+    border: 0px solid transparent;
+    font-size: 26px;
+    font-family: 'Roboto-Bold';
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff9b39, #fe48a2);
+    margin-top: 35px;
+    text-align: center;
+}
+
+.pop-first-okbutton:focus {
+    border: 4px solid #F3A43F;
+}
+
+.pop-first-subscription-modal {
+    position: absolute;
+    top: 0;
+}
+
+/* error messages css */
+.error-box {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    padding-left: 887px;
+    padding-bottom: 159px;
+    font-size: 26px;
+}
+
+
+.watch-pop-second-container {
+    z-index: 999999999;
+    position: absolute;
+    top: 0;
+    background: #424242;
+    margin-top: 323px;
+    width: 1053px;
+    height: 361px;
+    margin-left: 449px;
+    color: #fff;
+    font-size: 23px;
+    padding-top: 91px;
+    font-family: 'Roboto-Bold';
+}
+
+.pop-second-paragraph {
+    font-size: 24px;
+    text-align: center;
+    padding: 1px;
+}
+
+.pop-second-subscription-modal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.pop-second-headline {
+    text-align: center;
+    font-size: 50px;
+    background-color: #8a84842b;
+    padding: 30px;
+}
+
+
+.watch-pop-third-container {
+    z-index: 999999999;
+    position: absolute;
+    top: 0;
+    background: #4e4c4c;
+    margin-top: 323px;
+    width: 1053px;
+    height: 361px;
+    margin-left: 449px;
+    color: #fff;
+    font-size: 23px;
+    padding-top: 61px;
+    font-family: 'Roboto-Bold';
+}
+
+.pop-third-paragraph {
+    font-size: 24px;
+    text-align: center;
+    padding: 1px;
+}
+
+.pop-third-subscription-modal {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.pop-third-headline {
+    text-align: center;
+    font-size: 50px;
+    background-color: #8a84842b;
+    padding: 30px;
+}
+
+/* =================================log in loader CSS ============================= */
+
+.second-loader {
+    top: 63%;
+    left: 45%;
+    position: fixed !important;
+    z-index: 9999999999;
+    display: none;
+}
+
+.loader {
+    top: 15%;
+    left: 45%;
+    position: fixed !important;
+    z-index: 9999999999;
+    display: none;
+}
+
+
+.circle_loader {
+    width: 145px;
+    height: 145px;
+    background: url("../images/loader.png") no-repeat;
+    background-size: cover;
+    -moz-animation: spin 5s infinite linear;
+    -webkit-animation: spin 5s infinite linear;
+}

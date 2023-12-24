@@ -1,0 +1,538 @@
+.login_container {
+    position: fixed;
+    width: 1920px;
+    height: 1080px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    /* text-align: center; */
+}
+
+.text-right {
+    color: #fff;
+    font-size: 27px;
+    font-size: 22px;
+    font-family: 'Copperplate_Gothic_Bold';
+    color: #fff;
+    /* margin-top: 40px; */
+    display: inline-block;
+    padding-top: 29px;
+    padding-left: 24px;
+    position: relative;
+    /* bottom: -8px; */
+    width: 718px;
+}
+
+.log_heading {
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Copperplate_Gothic_Bold';
+    padding-bottom: 23px;
+    padding-top: 48px;
+}
+
+span.bold_text_praph {
+    line-height: 1.2;
+    color: #d8e5f4;
+    font-family: 'Copperplate-light';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.second_heading {
+    font-size: 23px;
+    color: #fff;
+    font-family: 'Copperplate_Gothic_Bold';
+    padding-bottom: 11px;
+    padding-top: 13px;
+}
+
+.bold-text-praph {
+    font-size: 18px;
+    padding-top: 11px;
+    font-family: 'Copperplate-light';
+}
+
+.log_in_inner_container {
+    width: 1520px;
+    margin: 0 auto;
+    padding-top: 150px;
+    display: table;
+    clear: both;
+}
+
+.login_left {
+    float: left;
+    width: 775px;
+    text-align: start;
+    position: relative;
+    bottom: 85px;
+}
+
+.logo_box .logo {
+    width: 431px;
+    height: 73px;
+}
+
+.log_in_heading {
+    font-size: 38px;
+    color: #fff;
+    font-family: 'Copperplate_Gothic_Bold';
+    padding-bottom: 30px;
+    padding-top: 48px;
+}
+
+.red_dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #e50913;
+    display: inline-block;
+}
+
+.log_in_subheading {
+    font-size: 19px;
+    color: #fff;
+    font-family: 'Copperplate_Gothic_Bold';
+    padding-bottom: 65px;
+}
+
+.log_in_subheading span {
+    font-family: 'Copperplate_Gothic_Bold';
+}
+
+.form_box input {
+    display: block;
+    width: 627px;
+    height: 78px;
+    background-color: #2d3f69;
+    border: 1px solid #97a1b7;
+    color: #98a2b7;
+    font-size: 30px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    border: 2px solid transparent;
+}
+
+.form_box input:focus {
+    border: 2px solid red;
+}
+
+.sign_in_btn {
+    background-color: #fff;
+    color: #000;
+    font-size: 30px;
+    font-family: 'Copperplate_Gothic_Bold';
+    display: inline-block;
+    padding: 30px 57px;
+    width: 540px;
+    height: 25px;
+    text-align: center;
+}
+
+.sign_in_with_code {
+    background-color: white;
+    color: #000;
+    font-size: 30px;
+    font-family: 'Copperplate_Gothic_Bold';
+    display: inline-block;
+    padding: 30px 33px;
+    /* margin-left: 30px; */
+    width: 588px;
+    height: 25px;
+    text-align: center;
+    position: relative;
+    margin-top: 12px;
+}
+
+.or_box {
+    font-size: 30px;
+    font-family: 'Copperplate_Gothic_Bold';
+    color: white;
+    position: relative;
+    left: 38%;
+    margin-top: 12px;
+}
+
+.or_box_two {
+    font-size: 30px;
+    font-family: 'Copperplate_Gothic_Bold';
+    color: white;
+    position: relative;
+    left: 38%;
+    margin-top: 10px;
+}
+
+.sign_in_with_qr_code {
+    background-color: white;
+    color: #000;
+    font-size: 30px;
+    font-family: 'Copperplate_Gothic_Bold';
+    display: inline-block;
+    padding: 30px 33px;
+    /* margin-left: 30px; */
+    width: 588px;
+    height: 25px;
+    text-align: center;
+    position: relative;
+    margin-top: 12px;
+}
+
+.login-button {
+    border: 2px solid transparent;
+}
+
+.login-button:focus {
+    /* border: 2px solid red; */
+    background-color: #ff000f;
+    color: #fff;
+}
+
+/* .login_right {
+    display: inline-block;
+    margin-top: 170px;
+} */
+
+.login_right img {
+    width: 743px;
+    height: 472px;
+}
+
+.instruction_code {
+    font-family: 'Copperplate_Gothic_Bold';
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+.footer_text {
+    padding-top: 22px;
+    width: 660px;
+    line-height: 1.2;
+    color: #d8e5f4;
+    font-family: 'Copperplate-light';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+span.bold_text {
+    font-family: 'Copperplate_Gothic_Bold';
+    font-size: 24px;
+    color: #fff;
+}
+
+.color_text {
+    color: #c5d5f2;
+}
+
+.error_box {
+    position: absolute;
+    width: 100%;
+    z-index: 9999999;
+    display: none;
+    top: 0px;
+    left: 585px;
+    padding-top: 400px;
+    /* text-align: center; */
+
+}
+
+
+.error_box_bg {
+    display: inline-block;
+    padding: 18px 20px;
+    border-radius: 10px;
+    border: 2px solid red;
+    background: #eee;
+    width: 713px;
+    height: 90px;
+}
+
+.error_title {
+    letter-spacing: 1px;
+    font-size: 29px;
+    color: #da2323;
+    text-transform: capitalize;
+    font-family: 'Copperplate_Gothic_Bold';
+}
+
+.error_message {
+    letter-spacing: 1px;
+    font-size: 29px;
+    color: rgb(0 0 0 / 70%);
+    font-family: 'Copperplate_Gothic_Bold';
+    text-transform: capitalize;
+}
+
+/* =================================log in loader CSS ============================= */
+
+#login_loader {
+    top: 50%;
+    left: 44%;
+    position: fixed !important;
+    z-index: 99999999;
+    display: none;
+}
+
+.login_circle_loader {
+    width: 145px;
+    height: 145px;
+    background: url("../images/loader.png") no-repeat;
+    background-size: cover;
+    -moz-animation: spin 5s infinite linear;
+    -webkit-animation: spin 5s infinite linear;
+}
+
+
+/* =================================log-in-with-qr code ============================= */
+
+.qr_login_container {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    z-index: 2;
+    text-align: center;
+    background: url("../images/login-background.png");
+}
+.qr_code_login_container{
+    background: url("../images/login-background.png");
+}
+.qr_login_inner_container {
+    width: 1700px;
+    margin: 0 auto;
+    padding-top: 200px;
+    display: table;
+    clear: both;
+}
+
+.qr_login_login_left {
+    float: left;
+    width: 900px;
+    text-align: start;
+    top: -30px;
+    position: relative;
+}
+
+.qr_login_logo_box .logo {
+    width: 431px;
+    height: 73px;
+}
+
+.qr_login_heading {
+    font-size: 32px;
+    color: #fff;
+    font-family: 'Copperplate_Gothic_Bold';
+    padding-bottom: 60px;
+    padding-top: 48px;
+    text-transform: capitalize;
+}
+
+.red_dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #e50913;
+    display: inline-block;
+}
+
+.qr_login_subheading {
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Copperplate_Gothic_Bold';
+    padding-bottom: 40px;
+}
+
+.qr_login_subheading span {
+    font-family: 'Copperplate_Gothic_Bold';
+}
+
+.qr_code_box {
+    font-size: 85px;
+    font-family: 'Copperplate_Gothic_Bold';
+    color: #fff;
+    padding: 0px 9px;
+    display: inline-block;
+    margin-bottom: 0px;
+    position: relative;
+    top: 10px;
+}
+
+.qr_code_btn {
+    background-color: #ffffff;
+    color: #000;
+    font-size: 30px;
+    font-family: 'Copperplate_Gothic_Bold';
+    display: inline-block;
+    padding: 30px;
+    width: 300px;
+}
+
+.qr_code_back_btn {
+    background-color: #ffffff;
+    color: #000;
+    font-size: 30px;
+    margin-left: 55px;
+    font-family: 'Copperplate_Gothic_Bold';
+    display: inline-block;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.instruction_code_heading {
+    font-size: 22px;
+    font-family: 'Copperplate_Gothic_Bold';
+    color: #e50915;
+    margin-bottom: 10px;
+}
+
+.code_underline {
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.note_box {
+    font-size: 25px;
+    font-family: 'Copperplate_Gothic_Bold';
+    color: #c5d5f2;
+    position: relative;
+    top: 163px;
+    font-weight: 700;
+}
+
+.qr_login_right {
+    text-align: justify;
+    line-height: 25px;
+    position: relative;
+    bottom: 100px;
+    float: left;
+    width: 683px;
+    margin-left: 117px;
+}
+
+.qr_code_scan_img img {
+    width: 350px !important;
+}
+
+.qr_scan_right {
+    position: relative !important;
+    bottom: 90px !important;
+}
+
+.qr_code_login_btn_box {
+    position: relative;
+    top: 75px;
+}
+
+.qr_login_right img {
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.checkbox_show {
+    width: 200px;
+    position: relative;
+    color: white;
+    font-family: 'Copperplate_Gothic_Bold';
+    left: 58px;
+    bottom: 32px;
+    display: inline-block;
+}
+
+.checkbox_bx {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 0;
+    margin-left: 0px;
+    border: 2px solid transparent;
+    position: relative;
+    bottom: 0;
+    margin-top: -10px;
+}
+
+img.checkbox_image {
+    width: 40px;
+    height: 40px;
+}
+
+.checkbox_bx:focus {
+    border: 2px solid #ff000f;
+}
+
+.qr_scan_form_box {
+    /* text-align: center; */
+}
+
+.getQrBack {
+    width: 200px;
+    position: relative;
+    left: 172px;
+}
+
+.qr_code_img {
+    margin-left: 201px;
+}
+
+.loginQRCodeImg {
+    width: 300px;
+}
+
+.qr_img {
+    width: 280px !important;
+}
+
+.qr_scan_img {
+    position: relative;
+    left: -37px;
+}
+
+.qr_login_error_box {
+    width: 100%;
+    position: absolute;
+    top: 87%;
+    left: 13%;
+}
+
+.qr_login_error_box_bg {
+    display: inline-block;
+    padding: 18px 20px;
+    border-radius: 15px;
+    border: 2px solid red;
+}
+
+.qr_login_error_title {
+    letter-spacing: 1px;
+    font-size: 22px;
+    color: #da2323;
+    text-transform: capitalize;
+    font-family: 'Copperplate_Gothic_Bold';
+}
+
+.qr_login_error_message {
+    letter-spacing: 1px;
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'Copperplate_Gothic_Bold';
+    text-transform: capitalize;
+}
+
+.new-code-button {
+    border: 2px solid transparent
+}
+
+.new-code-button:focus {
+    /* border: 2px solid red; */
+    background-color: #e50915;
+    color: #fff;
+}
+
+.qr_code_txt {
+    background-color: #2d3f69;
+    border: 1px solid #97a1b7;
+    padding: 25px 50px;
+}

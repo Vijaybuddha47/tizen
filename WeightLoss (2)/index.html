@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=1920, user-scalable=no'>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/video-player.css">
+    <link rel="stylesheet" href="lib/player/mediaelementplayer.css">
+
+    <!-- All used js library -->
+    <script src="lib/navigation/jquery.min.js"></script>
+    <script src="lib/navigation/lodash.min.js"></script>
+    <script src="lib/navigation/spatial_navigation.js"></script>
+    <script type="text/javascript" src="lib/player/mediaelement-and-player.js"></script>
+    <script type="text/javascript" src="lib/player/mediaelement-and-player.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main-container" id="main_container">
+      
+        <!-- Start of show screen -->
+        <!-- <div class="image-banner-container">
+            <img class="screen-Background" id="screenBackground">
+        </div> -->
+        <div class="images-container" id="preview_video_player">
+        </div>
+       
+        <div class="home-container" id="home_container">
+            <div class="top-banner-background" style="display:none;">
+                <img class="screen-Background" id="screenBackground">
+                </div>
+                <div class="top-second-banner-background" style="display:none;">
+                    <img class="second-screen-Background" id="second_screenBackground">
+                    </div>
+            <div class="watch-heading" id="images_container">
+                <div class="focusable menu-item my-video" id="menu0" tabindex="51" data-sn-up="null"
+                    data-sn-right="null" data-sn-left="null" data-sn-down="null">
+                    <span class="menu-categry">WATCH</span>
+                </div>
+            </div>
+          
+            <div class="bottomContainer">
+                <div class="row-container-inner" id="row_container_inner">
+                    <ul class="menu-list" id="menu_list">
+                        <li class="focusable menu-item" id="menu1" tabindex="0" data-sn-up="#menu0"
+                            data-sn-right="#menu2" data-sn-left="null" data-sn-down="null">
+                            <span class="menu-cat">MY VIDEO LIBRARY</span>
+                        </li>
+                        <li class="focusable menu-item" id="menu2" tabindex="0" data-sn-up="null"
+                            data-sn-right="#menu3" data-sn-left="#menu1" data-sn-down="null">
+                            <span class="menu-cat">CONTACT US</span>
+                        </li>
+                        <li class="focusable menu-item" id="menu3" tabindex="0" data-sn-up="null"
+                            data-sn-right="#menu4" data-sn-left="#menu2" data-sn-down="null">
+                            <span class="menu-cat">LOGOUT</span>
+                        </li>
+                        <li class="focusable item-cat" id="menu4" data-type="WORKOUT" data-type_1="PROGRAM"
+                        tabindex="0" data-sn-up="null" data-sn-right="#menu5" data-sn-left="#menu3"
+                        data-sn-down="null" >
+                        <img class="img-thumnails" src="images/workout.jpg" alt="home">
+                        <div class="title-heading">WORKOUTS</div>
+                    </li>
+                    <li class="focusable item-cat" data-type="FOOD_TRACKER" id="menu5" tabindex="0"
+                        data-sn-up="null" data-sn-right="#menu6" data-sn-left="#menu4" data-sn-down="null">
+                        <img class="img-thumnails" src="images/food-tracker.jpg" alt="home">
+                        <div class="title-heading">FOOD TRACKER</div>
+                    </li>
+                    <li class="focusable item-cat" id="menu6" data-type="NUTRITION"
+                        data-type_1="NUTRITION_VIDEO" tabindex="0" data-sn-up="null" data-sn-right="#menu7"
+                        data-sn-left="#menu5" data-sn-down="#cat_item_0">
+                        <img class="img-thumnails" src="images/nutrition.jpg" alt="home">
+                        <div class="title-heading">NUTRITIONIST</div>
+                    </li>
+                    <li class="focusable item-cat" id="menu7" data-type="COACHING" tabindex="0"
+                        data-sn-up="null" data-sn-right="#menu8" data-sn-left="#menu6"
+                        data-sn-down="#cat_item_0">
+                        <img class="img-thumnails" src="images/coaching.png" alt="home">
+                        <div class="title-heading">COACHING</div>
+
+                    </li>
+                    <li class="focusable item-cat" data-type="TELEHEALTH" id="menu8" tabindex="0"
+                        data-sn-up="null" data-sn-right="#menu9" data-sn-left="#menu7"
+                        data-sn-down="#cat_item_0">
+                        <img class="img-thumnails" src="images/telethealth.jpg" alt="home">
+                        <div class="title-heading">TELE HEALTH</div>
+                    </li>
+                    <li class="focusable item-cat" data-type="SPECIAL_OFFERS" id="menu9" tabindex="0"
+                        data-sn-up="null" data-sn-right="null" data-sn-left="#menu8" data-sn-down="#cat_item_0">
+                        <img class="img-thumnails" src="images/special_offer.jpg" alt="home">
+                        <div class="title-heading">SPECIAL OFFERS</div>
+                    </li>
+                        
+                    </ul>
+
+                    <!-- <div class="right-list-container" id="right_list_container">
+                        <ul class="data-category-list" id="data_category_list">
+                            <li class="focusable item-cat" id="menu4" data-type="WORKOUT" data-type_1="PROGRAM"
+                                tabindex="0" data-sn-up="null" data-sn-right="#menu5" data-sn-left="#menu3"
+                                data-sn-down="#cat_item_0" tabindex="0">
+                                <img class="img-thumnails" src="images/workout.jpg" alt="home">
+                                <div class="title-heading">WORKOUTS</div>
+                            </li>
+                            <li class="focusable item-cat" data-type="FOOD_TRACKER" id="menu5" tabindex="0"
+                                data-sn-up="null" data-sn-right="#menu6" data-sn-left="#menu4" data-sn-down="null" tabindex="1">
+                                <img class="img-thumnails" src="images/food-tracker.jpg" alt="home">
+                                <div class="title-heading">FOOD TRACKER</div>
+                            </li>
+                            <li class="focusable item-cat" id="menu6" data-type="NUTRITION"
+                                data-type_1="NUTRITION_VIDEO" tabindex="0" data-sn-up="null" data-sn-right="#menu7"
+                                data-sn-left="#menu5" data-sn-down="#cat_item_0" tabindex="2">
+                                <img class="img-thumnails" src="images/nutrition.jpg" alt="home">
+                                <div class="title-heading">NUTRITIONIST</div>
+                            </li>
+                            <li class="focusable item-cat" id="menu7" data-type="COACHING" tabindex="0"
+                                data-sn-up="null" data-sn-right="#menu8" data-sn-left="#menu6"
+                                data-sn-down="#cat_item_0" tabindex="3">
+                                <img class="img-thumnails" src="images/coaching.png" alt="home">
+                                <div class="title-heading">COACHING</div>
+
+                            </li>
+                            <li class="focusable item-cat" data-type="TELEHEALTH" id="menu8" tabindex="0"
+                                data-sn-up="null" data-sn-right="#menu9" data-sn-left="#menu7"
+                                data-sn-down="#cat_item_0" tabindex="4">
+                                <img class="img-thumnails" src="images/telethealth.jpg" alt="home">
+                                <div class="title-heading">TELE HEALTH</div>
+                            </li>
+                            <li class="focusable item-cat" data-type="SPECIAL_OFFERS" id="menu9" tabindex="0"
+                                data-sn-up="null" data-sn-right="null" data-sn-left="#menu8" data-sn-down="#cat_item_0" tabindex="5">
+                                <img class="img-thumnails" src="images/special_offer.jpg" alt="home">
+                                <div class="title-heading">SPECIAL OFFERS</div>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="details-container" id="details_container" style="display:none;">
+                </div>
+                <div class="full-detail-page-container" id="full_detail_page_container" style="display:none;">
+                    <div class="watch-details-container" id="watch_details_container"></div>
+                <div class="watch-button focusable" tabindex="0"
+                data-sn-up="null" data-sn-right="null" data-sn-left="#menu8" data-sn-down="#cat_item_0" id="watch_button"><span class="watch">WATCH</span></div>
+                </div>
+                <div class="outer-container" id="outer_container" style="display:none;"></div>
+            </div>
+        </div>
+        
+        <div class="video-details-container" id="video_details_container" style="display:none;">
+            <div class="my-video-heading">My Video Library</div>
+            <div class="my-video-details-container" id="my_video_details_container"></div>
+     </div>
+     <div class="program-episodes-container" id="program_episodes_container" style="display:none;"></div>
+     <div class="main-details-page-container" id="main_details_page_container" style="display:none;"></div>
+        <div class="contact-us-container" id="contact_us_container" style="display:none;">
+            <div class="modal_subscription" id="modal_subscription">
+                <div class="subscription_modal">
+                    <h2 class="subs-headline" id="popupMsg">CONTACT US</h2>
+                    <P class="paragraph">The easiest way to get in touch with us is to send us a quick text message. We
+                        are located in the United State and our Time Zone
+                        is Eastern Standard Time. We usually answer within a few minutes. However, please give us up to
+                        24 hours to responds. Please
+                        be sure to include your name, location and phone number. We will text or call you back by phone.
+                    </P>
+                    <p class="paragraph-list">1. United States and Canada please send your text to 774-240-5287.</p>
+                    <p class="paragraph-list">2. International customers can contact us with WhatsApp at
+                        +1-774-240-5287.</p>
+                    <p class="paragraph-list">3. Skype contact - live:armageddon1839</p>
+                    <p class="paragraph-list">4. Email - info@armageddonworld.com</p>
+                    <div class="ok_btn" id="okModal">
+                        <button class="ok-button focusable" tabindex="6" id="okButton" data-sn-up="null"
+                            data-sn-right="null" data-sn-left="null" data-sn-down="null">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="food-tracker-container" id="food_tracker_container" style="display:none;">
+            <div class="food-modal-subscription" id="food_modal_subscription">
+                <div class="food-subscription-modal">
+                    <h2 class="food-headline" id="food_headline">This is not available for tv</h2>
+                    <P class="food-paragraph">Use mobile version for this function</P>
+                    <div class="food-okbtn" id="food_okbtn">
+                        <button class="food-okbutton focusable" tabindex="6" id="food_okButton" data-sn-up="null"
+                            data-sn-right="null" data-sn-left="null" data-sn-down="null">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logout-container" id="logout_container" style="display:none;">
+            <div class="logout-subscription" id="logout_subscription">
+                <div class="logout-subscription-modal">
+                    <P class="logout-paragraph">Are you sure you want to logout?</P>
+                    <div class="logout-okbtn" id="logout_okbtn">
+                        <button class="logout-okbutton focusable" tabindex="6" id="no_okButton" data-sn-up="null"
+                            data-sn-right="#yes_okButton" data-sn-left="null" data-sn-down="null">NO</button>
+                        <button class="logout-okbutton focusable" tabindex="6" id="yes_okButton" data-sn-up="null"
+                            data-sn-right="null" data-sn-left="#no_okButton" data-sn-down="null">YES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="watch-pop-first-container" id="watch_pop_first_container" style="display:none;">
+            <div class="watch-pop-first-subscription" id="watch_pop_first_subscription">
+                <div class="pop-first-subscription-modal">
+                    <h2 class="pop-first-headline" id="pop_first_headline">HOW TO WATCH</h2>
+                    <P class="pop-first-paragraph">Visit your device (phone,pad.pc) follow the instruction,then return to Samsung Tv to enjoy your video</P>
+                    <div class="pop-first-okbtn" id="pop_first_okbtn">
+                        <button class="pop-first-okbutton focusable" tabindex="6" id="pop_first_okButton" data-sn-up="null"
+                            data-sn-right="null" data-sn-left="null" data-sn-down="null">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="watch-pop-second-container" id="watch_pop_second_container" style="display:none;">
+            <div class="watch-pop-first-subscription" id="watch_pop_first_subscription">
+                <div class="pop-second-subscription-modal">
+                    <h2 class="pop-second-headline" id="pop_first_headline">CONTACT COACH</h2>
+                    <P class="pop-second-paragraph">Call:774-240-5287</P>
+                    <P class="pop-second-paragraph">Whatsapp:774-240-5287</P>
+                    <P class="pop-second-paragraph">Skype:live:armageddon1839</P>
+                    <P class="pop-second-paragraph">Email:info@armageddonworld.com</P>
+                    <P class="pop-second-paragraph">WE ARE LOCATED IN THE UNITED STATES ON EASTERN STANDARD TIME</P>
+                    <div class="pop-first-okbtn" id="pop_first_okbtn">
+                        <button class="pop-first-okbutton focusable" tabindex="6" id="pop_second_okButton" data-sn-up="null"
+                            data-sn-right="null" data-sn-left="null" data-sn-down="null">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="watch-pop-third-container" id="watch_pop_third_container" style="display:none;">
+            <div class="watch-pop-first-subscription" id="watch_pop_first_subscription">
+                <div class="pop-third-subscription-modal">
+                    <h2 class="pop-third-headline" id="pop_first_headline">CONTACT COACH</h2>
+                    <P class="pop-third-paragraph">You can only access this service from your smart phone .Once purchased and activated you can screen share to your TV for a better user experience</P>
+                    <div class="pop-first-okbtn" id="pop_first_okbtn">
+                        <button class="pop-first-okbutton focusable" tabindex="6" id="pop_third_okButton" data-sn-up="null"
+                            data-sn-right="null" data-sn-left="null" data-sn-down="null">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of home screen -->
+    </div>
+  <!-- Start of video container -->
+  <div class="video-player-container">
+    <div id="videoPlayer">
+        <div class="video-container video_container focusable" id="video_container" tabindex='10'
+            data-sn-right="null" data-sn-left="null" data-sn-up="null" >
+            <object id="av-player" type="application/avplayer" class="video_box"
+                style="width: 1920px;height:1080px;"></object>
+            <div class="language">
+                <ul>
+                    <li class="init">Audio
+                        <span class="down-arrow">
+                            <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                  </svg>-->
+                        </span>
+                    </li>
+                    <li data-value="value 1">Auto <span class="down-arrow"></span></li>
+                    <li data-value="value 2">English <span class="down-arrow"></span></li>
+                    <li data-value="value 3">Spanish <span class="down-arrow"></span></li>
+                </ul>
+            </div>
+            <!-- Start of video pause -->
+            <div class="pause-icon" style="display: none;">
+                <img src="images/btn_play_off.png" alt="pause icon">
+            </div>
+            <!-- End of video pause -->
+            <!-- Start of video inner -->
+            <div class="video-inner">
+                <h4 class="video-title"></h4>
+                <!-- Start of video loader -->
+                <div class="video-buffered">
+                    <div class="circle_loader buffered_dimension"></div>
+                </div>
+                <!-- End of video loader -->
+            </div>
+            <!-- End of video inner -->
+            <!-- Start of progress bar -->
+            <div class="progress-container" style="display: none;">
+                <span class="progress-time" id="currentTime"></span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100" style="width:0%">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
+                <span class="progress-time" id="totalTime"></span>
+            </div>
+            <!-- End progress bar -->
+
+            <!-- Start of ad's time -->
+            <div class="ad_time_container">
+                <div class="show_ad_time">
+                    <span class="ad_title"></span>
+                    <span id="ad_time"></span>
+                </div>
+            </div>
+            <!-- End of ad's time -->
+
+            <!-- Start Previous / Next Video -->
+            <div class="video_next_previous_container" tabindex="9" id="videoNextPrevious">
+                <ul class="video_next_previous_icon_list">
+                    <li class="next_prev_video focusable" id="playPreviousVideo" data-sn-right="#playPauseVideo"
+                        data-sn-left="null" data-sn-down="null"><img src="images/previous_video.png"></li>
+                    <li class="video_next_previous_play_pause_center focusable" id="playPauseVideo"
+                        data-sn-right="#playNextVideo" data-sn-left="#playPreviousVideo" data-sn-down="null">
+                        <img src="images/play.png" id="videoNextPreviousPlayPauseIcon">
+                    </li>
+                    <li class="next_prev_video focusable" id="playNextVideo" data-sn-right="null"
+                        data-sn-left="#playPauseVideo" data-sn-down="null"><img src="images/next_video.png">
+                    </li>
+                </ul>
+            </div>
+            <!-- End Previous / Next Video -->
+        </div>
+    </div>
+</div>
+<!-- End of video container -->
+
+    <!-- Start of popup screen -->
+    <span id="modal_container" class="modal_container">
+        <!-- Html file will come here -->
+    </span>
+    <!-- End popup screen -->
+
+    <div class="loader" id="loader">
+        <div class="circle_loader"></div>
+    </div>
+    <div class="second-loader" id="second_loader">
+        <div class="circle_loader"></div>
+    </div>
+
+    <script src="js/config.js" type="text/javascript"></script>
+    <script src="js/navigation-common-function.js" type="text/javascript"></script>
+    <script src="js/home.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/modal.js" type="text/javascript"></script>
+    <script src="js/utility.js" type="text/javascript"></script>
+    <script src="js/api-v1.js" type="text/javascript"></script>
+    <script src="js/navigation.js" type="text/javascript"></script>
+    <script src="js/video-player.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/preview-video-player.css">
+    <script type="text/javascript" src="js/preview-video-player.js"></script>
+    <script src="$WEBAPIS/webapis/webapis.js" type="text/javascript"></script>
+    
+</body>
+
+</html>

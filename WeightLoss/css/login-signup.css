@@ -1,0 +1,60 @@
+.login-body{
+    background: url(../images/background.png);
+    width: 1920px;
+    height: 1080px;
+}
+
+.login-container {
+    /* background: url(../images/background.png); */
+    height: 1080px;
+    width: 1920px;
+}
+.left-side{
+    position: relative;
+    z-index: 9;
+    top: 196px;
+    left: 71px;
+}
+.form-inputbox{
+    width: 579px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+}
+.form-inputbox:focus{
+    width: 579px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(59, 59, 121);
+}
+
+.right-side{
+    text-align: center;
+}
+.login-btn{
+    width:579px;
+    font-size: 30px;
+    padding: 25px; 
+    border-radius: 81px;
+    background-image: linear-gradient(#FE4D9B, #FF9441);
+}
+
+.login-btn:focus{
+    background-color:rgb(59, 59, 121); ;
+}
+.login-heading {
+    font-size: 95px;
+    color: #fff;
+    font-family: 'Copperplate_Gothic_Bold';
+}
+.form-boxs{
+    padding-top: 43px;
+}
+.form-box {
+    padding-top: 20px;
+}
+

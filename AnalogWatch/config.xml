@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/AnalogWatch" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="1nHWQbrnk8.AnalogWatch" package="1nHWQbrnk8" required_version="2.1"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+    <icon src="icon.png"/>
+    <name>AnalogWatch</name>
+    <tizen:profile name="tv-samsung"/>
+    <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+
+    <!--For the internal storage-->
+    <!-- <privilege>http://tizen.org/privilege/mediastorage</privilege> -->
+    <!--For the external storage-->
+    <!-- <privilege>http://tizen.org/privilege/externalstorage</privilege> -->
+    
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.read"/>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.write"/>
+    <tizen:privilege name="http://tizen.org/privilege/download"/>
+    <tizen:privilege name="http://tizen.org/privilege/content.read"/>
+    <tizen:privilege name="http://tizen.org/privilege/content.write"/>
+</widget>

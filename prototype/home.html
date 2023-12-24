@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1920, user-scalable=no" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+
+    <script type="text/javascript" src="lib/navigation/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="lib/navigation/lodash.min.js"></script>
+    <script type="text/javascript" src="lib/navigation/spatial_navigation.js"></script>
+
+  </head>
+
+  <body>
+    <div class="main-container" id="main_container">
+      <div class="screen-background">
+        <img id="screenBackground" src="images/bg.png" alt="Background" />
+      </div>
+      <!-- Start of menu screen -->
+      <div class="nav-container minimize" id="nav_container">
+        <div class="logo-home">
+          <img class="logo-img" src="images/fusioni-pro-mobile.png" alt="Logo" />
+        </div>
+        <ul class="menu-container" id="menu_container">
+          <li class="sidenav selected focusable" id="home" tabindex="0" data-sn-up="null" data-sn-right="null"
+            data-sn-left="null" data-sn-down="#show">
+            <img src="images/Home_unActive.png" class="menu-icons" />
+            <span class="icon-span">Home</span>
+          </li>
+          <li class="sidenav focusable" id="show" tabindex="0" data-sn-up="#home" data-sn-right="null"
+            data-sn-left="null" data-sn-down="#movie">
+            <img src="images/tv_unActive.png" class="menu-icons" />
+            <span class="icon-span">TVShows</span>
+          </li>
+          <li class="sidenav focusable" id="movie" tabindex="0" data-sn-up="#show" data-sn-right="null"
+            data-sn-left="null" data-sn-down="#watchlist">
+            <img src="images/movies_unActive.png" class="menu-icons" />
+            <span class="icon-span">Movies</span>
+          </li>
+          <li class="sidenav focusable" id="watchlist" tabindex="0" data-sn-up="#movie" data-sn-right="null"
+            data-sn-left="null" data-sn-down="#search">
+            <img src="images/like_unActive.png" class="menu-icons" />
+            <span class="icon-span">Watchlist</span>
+          </li>
+          <li class="sidenav focusable" id="search" tabindex="0" data-sn-up="#watchlist" data-sn-right="null"
+            data-sn-left="null" data-sn-down="#account">
+            <img src="images/search_unActive.png" class="menu-icons" />
+            <span class="icon-span">Search</span>
+          </li>
+          <li class="sidenav focusable" id="account" tabindex="0" data-sn-up="#search" data-sn-right="null"
+            data-sn-left="null" data-sn-down="null">
+            <img src="images/profile_unActive.png" class="menu-icons" />
+            <span class="icon-span">Account</span>
+          </li>
+        </ul>
+      </div>
+      <!-- End menu screen -->
+
+      <!--Start of home screen -->
+      <div class="home_container" id="home_container"></div>
+      <!-- End home screen -->
+
+      <!-- Start of show screen -->
+      <div class="show_container" id="show_container"></div>
+      <!-- End show screen -->
+
+      <!-- Start of movie screen -->
+      <div class="movie_container" id="movie_container"></div>
+      <!-- End movie screen -->
+
+      <!-- Start of watchlist container screen -->
+      <div class="watchlist_container" id="watchlist_container"></div>
+      <!-- End watchlist container screen -->
+
+      <!-- Start of search screen -->
+      <div class="search_container" id="search_container" style="display: none;">
+        <!-- Html file will come here -->
+        <div class="search-background">
+          <img src="images/fusioni-pro.png" />
+          <div class="main-search-div" id="search_box">
+            <div class="search-banner-detail">
+              <div class="description-search">
+                <input type="text" class="form-control form-inputbox focusable" id="searchInputText" tabindex="1"
+                  data-sn-up="null" data-sn-down="null" data-sn-left="null" data-sn-right="null"
+                  placeholder="Search....">
+              </div>
+            </div>
+            <div class="msg_box search_msg_box" id="msg_box"></div>
+            <div class="second-search-div" id="second_search_div">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End search screen -->
+
+      <!-- Start of detail container screen -->
+      <div class="detail_container" id="detail_container"></div>
+      <div class="seasons_container" id="seasons_container">
+     </div>
+      <!-- End detail container screen -->
+
+      <!-- Start of account screen -->
+      <div class="account_container" id="account_container">
+        <div class="account-background">
+          <div class="account-information" id="account_information">
+            <div class="account-info">Account Info</div>
+            <div class="account-details">
+              <label>Name</label>
+              <p id="username">James Cooper</p>
+              <label>Email ID</label>
+              <p id="email">James@gmail.com</p>
+              <label>Subscription Details</label>
+              <p id="expiry">Weekly Subscription $1/ week valid until<br>4-4-22</p>
+            </div>
+            <div class="form-boxs signup-button-box">
+              <button class="sign-up boxble focusable" id="logout" tabindex="0" data-sn-up="null" data-sn-down="#exit"
+                data-sn-right="null" data-sn-left="#account">
+                Logout
+              </button>
+            </div>
+            <div class="form-boxs signup-button-box">
+              <button class="sign-up boxble focusable" id="exit" tabindex="0" data-sn-up="#logout" data-sn-down="null"
+                data-sn-right="null" data-sn-left="#account">
+                Exit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End account screen -->
+    </div>
+
+    <!-- Start of popup screen -->
+    <span id="modal_container" class="modal_container">
+      <!-- Html file will come here -->
+    </span>
+    <!-- End popup screen -->
+    <!-- <div class="background_box" id="home_spinner"> -->
+      <div class="loader" id="loader">
+        <div class="circle_loader"></div>
+    </div>
+    <!-- </div> -->
+    <script type="text/javascript" src="js/add-numbers-key.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/api-v1.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/navigation-common-function.js"></script>
+    <script type="text/javascript" src="$WEBAPIS/webapis/webapis.js "></script>
+  </body>
+
+</html>
